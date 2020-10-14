@@ -1,0 +1,13 @@
+<view class="container">
+
+  <view class="toy">
+    <text class="normaltitle"> movable area and view </text>
+    <movable-area>
+      <movable-view x="0" x="100rpx" direction="horizontal"> horizontal </movable-view>
+      <movable-view y="100rpx" x="200rpx" direction="vertical"> vertical </movable-view>
+      <movable-view y="200rpx" x="300rpx" direction="all" out-of-bounds="true"> out </movable-view>
+      <movable-view y="300rpx" direction="all" scale="true" scale-min="0.5" scale-max="4" scale-value="1"> scale </movable-view>
+    </movable-area>
+  </view>
+
+</view>

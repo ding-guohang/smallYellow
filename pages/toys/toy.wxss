@@ -1,0 +1,18 @@
+movable-area {
+  width: 400rpx;
+  height: 400rpx;
+  background-color: #ccc;
+  margin: 20rpx;
+  overflow: hidden;
+  /* margin-top: auto; */
+}
+
+movable-view {
+  background: #1AAD19;
+  color: #fff;
+  width: 100rpx;
+  height: 100rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}

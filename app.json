@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/diary/diary",
+    "pages/common/header",
+    "pages/toys/toy"
+  ],
+  "entryPagePath": "pages/diary/diary",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/diary/diary",
+        "text": "Diary"
+      },
+      {
+        "pagePath": "pages/toys/toy",
+        "text": "Toys"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "位置信息将用于测试地图功能"
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#eeeeee",
+    "navigationBarTitleText": "禁止社交领域",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

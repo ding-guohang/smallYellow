@@ -1,0 +1,17 @@
+@import "../common/header.wxss";
+
+#actions {
+  margin-top: 30rpx;
+}
+.diaries {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.diary-content {
+  margin: 10rpx;
+}
+.diary-date {
+  margin: 10rpx;
+  font-size: small;
+}
