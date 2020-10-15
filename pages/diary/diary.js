@@ -20,12 +20,15 @@ Page({
   addDiary: function () {
     if (this.data["showInput"]) {
       // console.log("get input: ", this.data['currentDiary'])
-      this.data['diaries'].push(this.data['currentDiary'])
-      wx.setStorageSync('diaries', this.data['diaries'])
+      if (null != this.data['currentDiary']) {
+        this.data['diaries'].push(this.data['currentDiary'])
+        wx.setStorageSync('diaries', this.data['diaries'])
+      }
       this.setData({
         showInput: false,
         isAddBtnPlain: true,
-        toAddDiary: 'to add diary'
+        toAddDiary: 'to add diary',
+        currentDiary: null
       })
       this.refreshDiaries()
     } else {

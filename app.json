@@ -1,40 +1,51 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/diary/diary",
     "pages/common/header",
     "pages/toys/toy"
   ],
-  "entryPagePath": "pages/diary/diary",
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "Home"
-      },
-      {
-        "pagePath": "pages/diary/diary",
-        "text": "Diary"
-      },
-      {
-        "pagePath": "pages/toys/toy",
-        "text": "Toys"
-      }
-    ]
-  },
+  "entryPagePath": "pages/index/index",
   "permission": {
     "scope.userLocation": {
       "desc": "位置信息将用于测试地图功能"
     }
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",
     "backgroundColor": "#eeeeee",
     "navigationBarTitleText": "禁止社交领域",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": false,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/diary/diary",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "Diary"
+      },
+      {
+        "pagePath": "pages/toys/toy",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "Toy"
+      }
+    ]
+  }
 }

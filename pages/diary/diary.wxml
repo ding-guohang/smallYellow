@@ -1,12 +1,12 @@
-<view id="actions">
-  <input id="diaryInput" wx:if="{{showInput}}" placeholder="input your diary here" bindinput="saveCurrentDiary" />
-  <button id="addDiaryBtn" bindtap="addDiary" type="primary" plain="{{isAddBtnPlain}}">{{toAddDiary}}</button>
-  <button bindtap="clearDiaries" type="warn" plain="true" wx:if="{{!showInput && diaries.length > 0}}">clearAll</button>
-</view>
-
-<view class="container diaries">
+<view class="diaries">
   <block wx:for="{{diaries}}" wx:for-item="diary" wx:key="*this">
     <text class="diary-date">{{diary.date}}</text>
     <text class="diary-content">{{diary.content}}</text>
   </block>
+</view>
+
+<view id="actions">
+  <input id="diaryInput" wx:if="{{showInput}}" placeholder="input your diary here" bindinput="saveCurrentDiary" />
+  <button id="addDiaryBtn" bindtap="addDiary" type="primary" plain="{{isAddBtnPlain}}">{{toAddDiary}}</button>
+  <button bindtap="clearDiaries" type="warn" plain="true" wx:if="{{!showInput && diaries.length > 0}}">clearAll</button>
 </view>
